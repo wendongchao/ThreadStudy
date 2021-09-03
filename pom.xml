@@ -12,6 +12,7 @@
         <module>thread-01-base</module>
     </modules>
 
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -21,4 +22,12 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
