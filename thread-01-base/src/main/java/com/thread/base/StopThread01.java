@@ -25,10 +25,11 @@ public class StopThread01 extends Thread{
             StopThread01 thread = new StopThread01();
             // 3. 调用该子类实例的 start() 方法启动该线程。
             thread.start();
-            thread.sleep(10);
-            Thread.currentThread().interrupt();
-            System.out.println("是否停止1?="+Thread.interrupted());
-            System.out.println("是否停止2?="+Thread.interrupted());
+            Thread.sleep(10);
+            //thread.interrupt();// 停止线程
+            Thread.currentThread().interrupt();// 停止线程
+            System.out.println("是否停止1?="+Thread.interrupted());// 测试当前线程是否已中断，当前线程是main
+            System.out.println("是否停止2?="+Thread.interrupted());// 测试当前线程是否已中断，当前线程是main
         } catch (InterruptedException e) {
             System.out.println("main catch");
             e.printStackTrace();
