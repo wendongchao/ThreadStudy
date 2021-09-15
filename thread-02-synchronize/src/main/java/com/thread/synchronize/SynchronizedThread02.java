@@ -3,7 +3,7 @@ package com.thread.synchronize;
 import com.thread.pojo.SynchronizedThreadPO02;
 
 /**
- * 线程同步
+ * synchronized同步方法
  * 多个线程访问一个对象中的实例变量，会出现线程不安全情况
  * 实例：
  * 两个线程访同时访问一个“没有同步”的方法，且操作的是一个个对象的实例变量，那么会出现“非线程安全”问题

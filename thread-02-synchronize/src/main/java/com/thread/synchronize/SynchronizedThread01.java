@@ -3,7 +3,7 @@ package com.thread.synchronize;
 import com.thread.pojo.SynchronizedThreadPO01;
 
 /**
- * 线程同步
+ * synchronized同步方法
  * 方法内的变量是线程同步的（线程安全）
  * “非线程安全”只存在“实例变量”中，方法内部是私有变量
  * @Author wendongchao

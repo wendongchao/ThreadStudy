@@ -5,7 +5,7 @@ import com.thread.pojo.ThreadA05;
 import com.thread.pojo.ThreadB05;
 
 /**
- * 线程同步
+ * synchronized同步方法
  * synchronized方法与锁对象
  * 关键字synchronized获取的锁都是对象锁
  * 示例：

@@ -1,9 +1,9 @@
 package com.thread.synchronize;
 
-import com.thread.pojo.SynchronizedThreadPO082;
+import com.thread.pojo.Sub08;
 
 /**
- * 线程同步
+ * synchronized同步方法
  * synchronized锁重入，支持父子继承
  * 说明：
  * 关键字synchronized拥有锁重入的功能，
@@ -18,8 +18,8 @@ public class SynchronizedThread08 extends Thread{
 
     @Override
     public void run() {
-        SynchronizedThreadPO082 synchronizedThreadPO082 = new SynchronizedThreadPO082();
-        synchronizedThreadPO082.methodB();
+        Sub08 sub08 = new Sub08();
+        sub08.methodB();
     }
 
     public static void main(String[] args) {

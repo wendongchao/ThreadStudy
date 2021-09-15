@@ -4,7 +4,7 @@ package com.thread.pojo;
  * @Author wendongchao
  * @Date 2021/9/11 18:09
  */
-public class SynchronizedThreadPO081 {
+public class Main08 {
     public int i = 10;
     synchronized public void methodA(){
         try {

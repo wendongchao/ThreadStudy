@@ -1,12 +1,9 @@
 package com.thread.synchronize;
 
-import com.thread.pojo.SynchronizedThreadPO06;
 import com.thread.pojo.SynchronizedThreadPO07;
-import com.thread.pojo.ThreadA06;
-import com.thread.pojo.ThreadB06;
 
 /**
- * 线程同步
+ * synchronized同步方法
  * synchronized锁重入
  * 说明：
  * 关键字synchronized拥有锁重入的功能，

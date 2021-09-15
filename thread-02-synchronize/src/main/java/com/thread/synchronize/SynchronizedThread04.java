@@ -5,7 +5,7 @@ import com.thread.pojo.ThreadA04;
 import com.thread.pojo.ThreadB04;
 
 /**
- * 线程同步
+ * synchronized同步方法
  * 多个对象多个锁
  * 示例：
  * 两个线程分别访问同一个类的两个不同实例的相同名称的同步方法，效果是异步的方式运行

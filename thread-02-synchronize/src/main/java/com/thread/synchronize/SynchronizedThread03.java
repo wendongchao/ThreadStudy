@@ -3,7 +3,7 @@ package com.thread.synchronize;
 import com.thread.pojo.SynchronizedThreadPO03;
 
 /**
- * 线程同步
+ * synchronized同步方法
  * 多个线程访问一个对象中的同步方法时，一定是线程安全的，及时使用到了实例变量
  * 实例：
  * 多个线程访问一个对象中的同步方法时，一定是线程安全的。实例是同步访问，线程会顺序输出
