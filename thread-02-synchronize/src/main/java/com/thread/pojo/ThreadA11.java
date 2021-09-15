@@ -6,15 +6,17 @@ package com.thread.pojo;
  */
 public class ThreadA11 extends Thread{
 
-    private Sub10 sub10;
+    private SynchronizedThreadPO11 synchronizedThreadPO11;
 
-    public ThreadA11(Sub10 sub10) {
-        this.sub10 = sub10;
+    public ThreadA11(SynchronizedThreadPO11 synchronizedThreadPO11) {
+        this.synchronizedThreadPO11 = synchronizedThreadPO11;
     }
 
     @Override
     public void run() {
-        sub10.method();
+        CommonUtils.beginTime1 = System.currentTimeMillis();
+        synchronizedThreadPO11.doLongTimeMethod();
+        CommonUtils.endTime1 = System.currentTimeMillis();
     }
 
 }

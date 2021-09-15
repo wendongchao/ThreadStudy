@@ -14,7 +14,9 @@ public class ThreadB11 extends Thread{
 
     @Override
     public void run() {
+        CommonUtils.beginTime2 = System.currentTimeMillis();
         synchronizedThreadPO11.doLongTimeMethod();
+        CommonUtils.endTime2 = System.currentTimeMillis();
     }
 
 
