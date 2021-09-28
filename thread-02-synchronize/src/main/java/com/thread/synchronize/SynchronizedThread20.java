@@ -12,14 +12,14 @@ import com.thread.pojo.ThreadB19;
  * 2、当其他线程执行x对象中synchronized同步方法时呈同步效果。
  * 3、当其他线程执行x对象方法里面的synchronized(this)代码块时也呈现同步效果。
  * 注意：如果其他线程调用不加synchronized关键字的方法时，还是异步调用。
- * 结论2：当其他线程执行x对象中synchronized同步方法时呈同步效果。
+ * 结论3：当其他线程执行x对象方法里面的synchronized(this)代码块时也呈现同步效果。
  * 示例：
  * 可以看到线程呈 “同步” 效果
  *
  * @Author wendongchao
  * @Date 2021/9/11 19:55
  */
-public class SynchronizedThread19 {
+public class SynchronizedThread20 {
 
     public static void main(String[] args) throws InterruptedException {
         SynchronizedThreadPO191 po191 = new SynchronizedThreadPO191();
