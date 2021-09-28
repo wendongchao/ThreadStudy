@@ -1,10 +1,10 @@
 package com.thread.synchronize;
 
 
-import com.thread.pojo.SynchronizedThreadPO191;
-import com.thread.pojo.SynchronizedThreadPO192;
-import com.thread.pojo.ThreadA19;
-import com.thread.pojo.ThreadB19;
+import com.thread.pojo.SynchronizedThreadPO201;
+import com.thread.pojo.SynchronizedThreadPO202;
+import com.thread.pojo.ThreadA20;
+import com.thread.pojo.ThreadB20;
 
 /**
  * synchronized(非this对象x)，3个结论
@@ -17,19 +17,19 @@ import com.thread.pojo.ThreadB19;
  * 可以看到线程呈 “同步” 效果
  *
  * @Author wendongchao
- * @Date 2021/9/11 19:55
+ * @Date 2021/9/11 20:55
  */
 public class SynchronizedThread20 {
 
     public static void main(String[] args) throws InterruptedException {
-        SynchronizedThreadPO191 po191 = new SynchronizedThreadPO191();
-        SynchronizedThreadPO192 po192 = new SynchronizedThreadPO192();
-        ThreadA19 threadA19 = new ThreadA19(po191,po192);
-        threadA19.setName("A");
-        threadA19.start();
+        SynchronizedThreadPO201 po201 = new SynchronizedThreadPO201();
+        SynchronizedThreadPO202 po202 = new SynchronizedThreadPO202();
+        ThreadA20 threadA20 = new ThreadA20(po201,po202);
+        threadA20.setName("A");
+        threadA20.start();
         Thread.sleep(100);
-        ThreadB19 threadB19 = new ThreadB19(po192);
-        threadB19.setName("B");
-        threadB19.start();
+        ThreadB20 threadB20 = new ThreadB20(po202);
+        threadB20.setName("B");
+        threadB20.start();
     }
 }
