@@ -10,7 +10,6 @@ import java.util.List;
  */
 public class SynchronizedThreadPO171 {
     private List<String> list = new ArrayList<>();
-    private List<String> list2 = new ArrayList<>();
     synchronized public void add(String data) {
         list.add(data);
     }
