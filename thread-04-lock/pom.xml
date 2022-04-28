@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- 线程间通信 -->
-    <artifactId>thread-03-communication</artifactId>
+    <!--线程锁-->
+    <artifactId>thread-04-lock</artifactId>
+
 
 </project>

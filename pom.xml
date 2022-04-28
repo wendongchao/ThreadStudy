@@ -19,6 +19,7 @@
         <module>thread-01-base</module>
         <module>thread-02-synchronize</module>
         <module>thread-03-communication</module>
+        <module>thread-04-lock</module>
     </modules>
 
 
@@ -28,6 +29,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
         </dependency>
     </dependencies>
 
