@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <!--线程基础-->
     <artifactId>thread-01-base</artifactId>
 
 

@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <!--线程安全-->
     <artifactId>thread-02-synchronize</artifactId>
 
 
