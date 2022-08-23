@@ -20,6 +20,7 @@
         <module>thread-02-synchronize</module>
         <module>thread-03-communication</module>
         <module>thread-04-lock</module>
+        <module>thread-05-future</module>
     </modules>
 
     <properties>
