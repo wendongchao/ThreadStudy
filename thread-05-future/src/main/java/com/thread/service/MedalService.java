@@ -8,8 +8,12 @@ import com.thread.future.MedalInfo;
  */
 public class MedalService {
 
-    public MedalInfo getMedalInfo(long userId) throws InterruptedException {
-        Thread.sleep(500); //模拟调用耗时
+    public MedalInfo getMedalInfo(long userId) {
+        try {
+            Thread.sleep(500); //模拟调用耗时
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return new MedalInfo("666", "守护勋章");
     }
 
