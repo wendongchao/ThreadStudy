@@ -1,4 +1,4 @@
-package completablefuture;
+package completablefuture.test01;
 
 import junit.framework.TestCase;
 
