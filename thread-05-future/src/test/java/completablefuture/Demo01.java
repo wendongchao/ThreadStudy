@@ -331,4 +331,18 @@ public class Demo01 extends TestCase {
         System.out.println("任务完成后："+future.join());
     }
 
+    public void test18() {
+        CompletableFuture<String> f = CompletableFuture.completedFuture("a");
+
+        CompletableFuture<String> future = CompletableFuture
+                .supplyAsync(() -> "b", executorService)
+                .thenComposeAsync(data -> {
+                    System.out.println(data);
+                    return null;
+                }, executorService);
+
+        System.out.println(future.join());
+        executorService.shutdown();
+    }
+
 }
