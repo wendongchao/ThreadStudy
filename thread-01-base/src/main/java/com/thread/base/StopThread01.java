@@ -14,7 +14,7 @@ public class StopThread01 extends Thread{
     // 1. 新建一个类继承 Thread 类，并重写 Thread 类的 run() 方法。
     @Override
     public void run() {
-        for (int i = 0; i < 500; i++) {
+        for (int i = 0; i < 50000; i++) {
             System.out.println("线程名称："+Thread.currentThread().getName()+", i=" + i);
         }
     }
@@ -25,11 +25,13 @@ public class StopThread01 extends Thread{
             StopThread01 thread = new StopThread01();
             // 3. 调用该子类实例的 start() 方法启动该线程。
             thread.start();
-            Thread.sleep(10);
-            //thread.interrupt();// 停止线程
-            Thread.currentThread().interrupt();// 停止线程
-            System.out.println("是否停止1?="+Thread.interrupted());// 测试当前线程是否已中断，当前线程是main
-            System.out.println("是否停止2?="+Thread.interrupted());// 测试当前线程是否已中断，当前线程是main
+            Thread.sleep(100);
+            thread.interrupt();// 停止线程
+//            Thread.currentThread().interrupt();// 停止线程
+            System.out.println("调用的线程1："+thread.getName());
+            System.out.println("调用的线程2："+Thread.currentThread().getName());
+            System.out.println("是否停止1?="+thread.interrupted());// 测试当前线程是否已中断，当前线程是main
+            System.out.println("是否停止2?="+thread.interrupted());// 测试当前线程是否已中断，当前线程是main
         } catch (InterruptedException e) {
             System.out.println("main catch");
             e.printStackTrace();
