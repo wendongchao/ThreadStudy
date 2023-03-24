@@ -25,5 +25,15 @@ public class SynchronizedThreadPO06 {
         }
     }
 
+    public void methodC() {
+        try {
+            System.out.println("begin methodC threadName=" + Thread.currentThread().getName());
+            Thread.sleep(100);
+            System.out.println("C end");
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

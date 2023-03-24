@@ -34,5 +34,9 @@ public class SynchronizedThread06 {
         ThreadB06 thread2 = new ThreadB06(suspendThreadPO1);
         thread2.setName("b");
         thread2.start();
+
+        ThreadC06 thread3 = new ThreadC06(suspendThreadPO1);
+        thread3.setName("c");
+        thread3.start();
     }
 }
