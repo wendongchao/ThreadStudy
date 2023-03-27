@@ -32,6 +32,7 @@ public class SynchronizedThread21 {
         // 二个实例对象
         SynchronizedThreadPO21 po21a = new SynchronizedThreadPO21();
         SynchronizedThreadPO21 po21b = new SynchronizedThreadPO21();
+        SynchronizedThreadPO21 po21c = new SynchronizedThreadPO21();
         ThreadA21 threadA21 = new ThreadA21(po21a);
         threadA21.setName("A");
         threadA21.start();
@@ -39,5 +40,9 @@ public class SynchronizedThread21 {
         ThreadB21 threadB21 = new ThreadB21(po21b);
         threadB21.setName("B");
         threadB21.start();
+
+        ThreadC21 threadC21 = new ThreadC21(po21c);
+        threadC21.setName("C");
+        threadC21.start();
     }
 }
