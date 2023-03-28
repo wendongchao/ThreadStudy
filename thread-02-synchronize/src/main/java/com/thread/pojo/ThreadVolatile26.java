@@ -7,8 +7,8 @@ package com.thread.pojo;
 public class ThreadVolatile26 implements Runnable {
     private volatile int count;
 
-    public void add() {
-        for (int i = 0; i < 100; i++) {
+    public synchronized void add() {
+        for (int i = 0; i < 1000; i++) {
             count++;
             System.out.println("thread-name="+Thread.currentThread().getName()+",count="+count);
         }

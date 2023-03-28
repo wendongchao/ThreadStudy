@@ -9,7 +9,7 @@ import com.thread.pojo.ThreadVolatile26;
  * @data: 2023/3/28 09:35
  */
 public class SynchronizedThread26 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ThreadVolatile26 volatile26 = new ThreadVolatile26();
 
         Thread[] threads = new Thread[10];
@@ -20,7 +20,8 @@ public class SynchronizedThread26 {
         for (int i = 0; i < 10; i++) {
             threads[i].start();
         }
-        System.out.println(volatile26.getCount());
+        Thread.sleep(1000);
+        System.out.println("数值："+volatile26.getCount());
 
     }
 }
