@@ -13,6 +13,8 @@ public class ThreadB04 extends Thread {
 
     @Override
     public void run() {
-       c.getValue();
+        while (true) {
+            c.getValue();
+        }
     }
 }
